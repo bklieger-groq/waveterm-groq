@@ -5,12 +5,14 @@ import { MessageModal } from "@/app/modals/messagemodal";
 import { AboutModal } from "./about";
 import { TosModal } from "./tos";
 import { UserInputModal } from "./userinputmodal";
+import { AiSettingsModal } from "./aisettingsmodal";
 
 const modalRegistry: { [key: string]: React.ComponentType<any> } = {
     [TosModal.displayName || "TosModal"]: TosModal,
     [UserInputModal.displayName || "UserInputModal"]: UserInputModal,
     [AboutModal.displayName || "AboutModal"]: AboutModal,
     [MessageModal.displayName || "MessageModal"]: MessageModal,
+    [AiSettingsModal.displayName || "AiSettingsModal"]: AiSettingsModal,
 };
 
 export const getModalComponent = (key: string): React.ComponentType<any> | undefined => {

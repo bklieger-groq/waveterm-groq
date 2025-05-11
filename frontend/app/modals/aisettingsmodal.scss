@@ -1,0 +1,73 @@
+// Copyright 2025, Groq, Inc.
+// SPDX-License-Identifier: Apache-2.0
+
+.ai-settings-modal {
+    .modal-content {
+        padding: 20px;
+        min-width: 400px;
+
+        h2 {
+            margin: 0 0 20px;
+            color: var(--main-text-color);
+            font-size: var(--title-font-size);
+        }
+
+        .settings-form {
+            .form-group {
+                margin-bottom: 20px;
+
+                label {
+                    display: block;
+                    margin-bottom: 8px;
+                    color: var(--main-text-color);
+                    font-size: 14px;
+                }
+
+                .input-with-button {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+
+                    input {
+                        flex: 1;
+                        padding: 8px 12px;
+                        border: 1px solid var(--border-color);
+                        border-radius: 4px;
+                        background-color: var(--panel-bg-color);
+                        color: var(--main-text-color);
+                        font-size: 14px;
+
+                        &:focus {
+                            outline: none;
+                            border-color: var(--accent-color);
+                        }
+
+                        &::placeholder {
+                            color: var(--secondary-text-color);
+                        }
+                    }
+
+                    .view-button {
+                        padding: 8px;
+                        border: 1px solid var(--border-color);
+                        border-radius: 4px;
+                        background-color: var(--panel-bg-color);
+                        color: var(--main-text-color);
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        &:hover {
+                            background-color: var(--hover-bg-color);
+                        }
+
+                        i {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 

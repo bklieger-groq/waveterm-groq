@@ -27,7 +27,7 @@
 
                 .chat-msg-container {
                     display: flex;
-                    gap: 8px;
+                    gap: 4px;
                     .chat-msg {
                         margin: 10px 0;
                         display: flex;
@@ -44,7 +44,7 @@
                                 border-radius: 4px;
                                 background-color: rgb(from var(--highlight-bg-color) r g b / 0.05);
                                 display: flex;
-                                padding: 6px;
+                                padding: 6px 4px;
                             }
                         }
 
@@ -144,6 +144,28 @@
             justify-content: center;
             flex: 0 0 auto;
             padding: 0;
+        }
+    }
+}
+
+.custom\@groq-endicon {
+    background-image: url(/logos/groq-endicon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: -0.125em;
+    border-radius: 2px;
+}
+
+.chat-msg-header {
+    .icon-box {
+        .custom\@groq-endicon {
+            width: 1.2em;
+            height: 1.2em;
+            vertical-align: -0.2em;
         }
     }
 }

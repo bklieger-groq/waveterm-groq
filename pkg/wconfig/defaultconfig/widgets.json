@@ -33,7 +33,7 @@
     },
     "defwidget@ai": {
         "display:order": -2,
-        "icon": "sparkles",
+        "icon": "custom@groq-endicon",
         "label": "ai",
         "blockdef": {
             "meta": {

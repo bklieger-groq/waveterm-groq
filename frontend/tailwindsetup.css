@@ -9,16 +9,16 @@
     --color-white: #f7f7f7;
     --color-muted-foreground: rgb(195, 200, 194);
     --color-secondary: rgb(195, 200, 194);
-    --color-accent-50: rgb(236, 253, 232);
-    --color-accent-100: rgb(209, 250, 202);
-    --color-accent-200: rgb(167, 243, 168);
-    --color-accent-300: rgb(110, 231, 133);
-    --color-accent-400: rgb(88, 193, 66); /* main accent color */
-    --color-accent-500: rgb(63, 162, 51);
-    --color-accent-600: rgb(47, 133, 47);
-    --color-accent-700: rgb(34, 104, 43);
-    --color-accent-800: rgb(22, 81, 35);
-    --color-accent-900: rgb(15, 61, 29);
+    --color-accent-50: rgb(255, 247, 237);
+    --color-accent-100: rgb(255, 237, 213);
+    --color-accent-200: rgb(254, 215, 170);
+    --color-accent-300: rgb(253, 186, 116);
+    --color-accent-400: rgb(251, 146, 60); /* main accent color */
+    --color-accent-500: rgb(249, 115, 22);
+    --color-accent-600: rgb(234, 88, 12);
+    --color-accent-700: rgb(194, 65, 12);
+    --color-accent-800: rgb(154, 52, 18);
+    --color-accent-900: rgb(124, 45, 18);
     --color-error: rgb(229, 77, 46);
     --color-warning: rgb(224, 185, 86);
     --color-success: rgb(78, 154, 6);
@@ -26,10 +26,10 @@
     --color-hover: rgba(255, 255, 255, 0.1);
     --color-border: rgba(255, 255, 255, 0.16);
     --color-modalbg: #232323;
-    --color-accentbg: rgba(88, 193, 66, 0.5);
+    --color-accentbg: rgba(251, 146, 60, 0.5);
     --color-hoverbg: rgba(255, 255, 255, 0.2);
-    --color-accent: rgb(88, 193, 66);
-    --color-accenthover: rgb(118, 223, 96);
+    --color-accent: rgb(251, 146, 60);
+    --color-accenthover: rgb(253, 186, 116);
 
     --font-sans: "Inter", sans-serif;
     --font-mono: "Hack", monospace;
@@ -45,7 +45,7 @@
     /* ANSI Colors (Default Dark Palette) */
     --ansi-black: #757575;
     --ansi-red: #cc685c;
-    --ansi-green: #76c266;
+    --ansi-green: #f1a65a;
     --ansi-yellow: #cbca9b;
     --ansi-blue: #85aacb;
     --ansi-magenta: #cc72ca;
@@ -53,7 +53,7 @@
     --ansi-white: #c1c1c1;
     --ansi-brightblack: #727272;
     --ansi-brightred: #cc9d97;
-    --ansi-brightgreen: #a3dd97;
+    --ansi-brightgreen: #ffb86c;
     --ansi-brightyellow: #cbcaaa;
     --ansi-brightblue: #9ab6cb;
     --ansi-brightmagenta: #cc8ecb;

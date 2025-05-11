@@ -22,7 +22,7 @@ export function blockViewToIcon(view: string): string {
         return "globe";
     }
     if (view == "waveai") {
-        return "sparkles";
+        return "custom@groq-endicon";
     }
     if (view == "help") {
         return "circle-question";

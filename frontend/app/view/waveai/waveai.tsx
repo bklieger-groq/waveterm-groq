@@ -19,6 +19,7 @@ import { OverlayScrollbarsComponent, OverlayScrollbarsComponentRef } from "overl
 import { forwardRef, memo, useCallback, useEffect, useImperativeHandle, useMemo, useRef, useState } from "react";
 import { debounce, throttle } from "throttle-debounce";
 import "./waveai.scss";
+import { modalsModel } from "@/store/modalmodel";
 
 interface ChatMessageType {
     id: string;
@@ -94,8 +95,8 @@ export class WaveAiModel implements ViewModel {
         this.viewType = "waveai";
         this.blockId = blockId;
         this.blockAtom = WOS.getWaveObjectAtom<Block>(`block:${blockId}`);
-        this.viewIcon = atom("sparkles");
-        this.viewName = atom("Wave AI");
+        this.viewIcon = atom("custom@groq-endicon");
+        this.viewName = atom("Compound Beta");
         this.messagesAtom = atom([]);
         this.messagesSplitAtom = splitAtom(this.messagesAtom);
         this.latestMessageAtom = atom((get) => get(this.messagesAtom).slice(-1)[0]);
@@ -222,7 +223,7 @@ export class WaveAiModel implements ViewModel {
                         viewTextChildren.push({
                             elemtype: "iconbutton",
                             icon: "cloud",
-                            title: "Using Wave's AI Proxy (gpt-4o-mini)",
+                            title: "Using Groq API (compound-beta)",
                             noAction: true,
                         });
                     } else {
@@ -275,6 +276,12 @@ export class WaveAiModel implements ViewModel {
                     });
                 },
             });
+            dropdownItems.push({
+                label: "Settings",
+                onClick: () => {
+                    modalsModel.pushModal("AiSettingsModal");
+                },
+            });
             viewTextChildren.push({
                 elemtype: "menubutton",
                 text: presetName,
@@ -290,7 +297,15 @@ export class WaveAiModel implements ViewModel {
                 title: "Clear Chat History",
                 click: this.clearMessages.bind(this),
             };
-            return [clearButton];
+            let settingsButton: IconButtonDecl = {
+                elemtype: "iconbutton",
+                icon: "key",
+                title: "AI Settings",
+                click: () => {
+                    modalsModel.pushModal("AiSettingsModal");
+                },
+            };
+            return [clearButton, settingsButton];
         });
     }
 
@@ -474,7 +489,7 @@ const ChatItem = ({ chatItemAtom, model }: ChatItemProps) => {
                 <>
                     <div className="chat-msg chat-msg-header">
                         <div className="icon-box">
-                            <i className="fa-sharp fa-solid fa-sparkles"></i>
+                            <i className="custom@groq-endicon"></i>
                         </div>
                     </div>
                     <div className="chat-msg chat-msg-assistant">
@@ -489,7 +504,7 @@ const ChatItem = ({ chatItemAtom, model }: ChatItemProps) => {
             ) : (
                 <>
                     <div className="chat-msg-header">
-                        <i className="fa-sharp fa-solid fa-sparkles"></i>
+                        <i className="custom@groq-endicon"></i>
                     </div>
                     <TypingIndicator className="chat-msg typing-indicator" />
                 </>

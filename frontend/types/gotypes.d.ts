@@ -559,7 +559,6 @@ declare global {
         "editor:minimapenabled"?: boolean;
         "editor:stickyscrollenabled"?: boolean;
         "editor:wordwrap"?: boolean;
-        "editor:fontsize"?: number;
         "graph:*"?: boolean;
         "graph:numpoints"?: number;
         "graph:metrics"?: string[];

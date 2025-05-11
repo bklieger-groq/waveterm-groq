@@ -1,19 +1,31 @@
 {
-    "ai@global": {
-        "display:name": "Global default",
-        "display:order": -1,
-        "ai:*": true
-    },
-    "ai@wave": {
-        "display:name": "Wave Proxy - gpt-4o-mini",
+    "ai@compound": {
+        "display:name": "Compound Beta",
         "display:order": 0,
         "ai:*": true,
-        "ai:apitype": "",
-        "ai:baseurl": "",
-        "ai:apitoken": "",
-        "ai:name": "",
-        "ai:orgid": "",
-        "ai:model": "gpt-4o-mini",
+        "ai:apitype": "openai",
+        "ai:baseurl": "https://api.groq.com/openai/v1",
+        "ai:model": "compound-beta",
+        "ai:maxtokens": 2048,
+        "ai:timeoutms": 60000
+    },
+    "ai@compound-mini": {
+        "display:name": "Compound Beta Mini",
+        "display:order": 1,
+        "ai:*": true,
+        "ai:apitype": "openai",
+        "ai:baseurl": "https://api.groq.com/openai/v1",
+        "ai:model": "compound-beta-mini",
+        "ai:maxtokens": 2048,
+        "ai:timeoutms": 60000
+    },
+    "ai@llama4": {
+        "display:name": "Llama 4 Maverick",
+        "display:order": 2,
+        "ai:*": true,
+        "ai:apitype": "openai",
+        "ai:baseurl": "https://api.groq.com/openai/v1",
+        "ai:model": "meta-llama/llama-4-maverick-17b-128e-instruct",
         "ai:maxtokens": 2048,
         "ai:timeoutms": 60000
     }

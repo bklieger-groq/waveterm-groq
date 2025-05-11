@@ -8,6 +8,7 @@ import (
 	"errors"
 	"fmt"
 	"io"
+	"log"
 	"regexp"
 	"strings"
 
@@ -114,6 +115,7 @@ func (OpenAIBackend) StreamCompletion(ctx context.Context, request wshrpc.WaveAI
 			// Make non-streaming API call
 			resp, err := client.CreateChatCompletion(ctx, req)
 			if err != nil {
+				log.Printf("OpenAI API error: %v", err)
 				rtn <- makeAIError(fmt.Errorf("error calling openai API: %v", err))
 				return
 			}
@@ -144,6 +146,7 @@ func (OpenAIBackend) StreamCompletion(ctx context.Context, request wshrpc.WaveAI
 
 		apiResp, err := client.CreateChatCompletionStream(ctx, req)
 		if err != nil {
+			log.Printf("OpenAI API error: %v", err)
 			rtn <- makeAIError(fmt.Errorf("error calling openai API: %v", err))
 			return
 		}
@@ -154,6 +157,7 @@ func (OpenAIBackend) StreamCompletion(ctx context.Context, request wshrpc.WaveAI
 				break
 			}
 			if err != nil {
+				log.Printf("OpenAI stream error: %v", err)
 				rtn <- makeAIError(fmt.Errorf("OpenAI request, error reading message: %v", err))
 				break
 			}
