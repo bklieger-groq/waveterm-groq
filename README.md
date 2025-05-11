@@ -1,3 +1,14 @@
+# Wave Terminal Fork -- Powered by Groq
+
+This is a fork of the Wave Terminal that integrates Compound Beta by Groq for AI with real time search and code execution capabilities. It also adds new features and styles such as the organized command log. Please check out and support the [original project](https://www.waveterm.dev)! 
+
+<img width="1470" alt="First demo image" src="https://github.com/user-attachments/assets/4f3af898-8208-42e1-9344-b698f19a004c" />
+
+<img width="1470" alt="Second demo image" src="https://github.com/user-attachments/assets/dc76a374-a3fa-4b4f-a52b-1d7dbd06d8f5" />
+
+
+# Original
+
 <p align="center">
   <a href="https://www.waveterm.dev">
 	<picture>
