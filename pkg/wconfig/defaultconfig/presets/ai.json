@@ -1,5 +1,5 @@
 {
-    "ai@compound": {
+    "ai@compound-beta": {
         "display:name": "Compound Beta",
         "display:order": 0,
         "ai:*": true,

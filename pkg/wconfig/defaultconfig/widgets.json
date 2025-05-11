@@ -1,12 +1,22 @@
 {
     "defwidget@terminal": {
-        "display:order": -5,
+        "display:order": -6,
         "icon": "square-terminal",
         "label": "terminal",
         "blockdef": {
             "meta": {
                 "view": "term",
                 "controller": "shell"
+            }
+        }
+    },
+    "defwidget@commandlog": {
+        "display:order": -5,
+        "icon": "list",
+        "label": "cmdlog",
+        "blockdef": {
+            "meta": {
+                "view": "commandlog"
             }
         }
     },
@@ -33,7 +43,7 @@
     },
     "defwidget@ai": {
         "display:order": -2,
-        "icon": "custom@groq-endicon",
+        "icon": "robot",
         "label": "ai",
         "blockdef": {
             "meta": {

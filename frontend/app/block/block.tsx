@@ -36,6 +36,7 @@ import { QuickTipsViewModel } from "../view/quicktipsview/quicktipsview";
 import "./block.scss";
 import { BlockFrame } from "./blockframe";
 import { blockViewToIcon, blockViewToName } from "./blockutil";
+import { CommandLogViewModel } from "@/app/view/commandlog/commandlog";
 
 const BlockRegistry: Map<string, ViewModelClass> = new Map();
 BlockRegistry.set("term", TermViewModel);
@@ -48,6 +49,7 @@ BlockRegistry.set("vdom", VDomModel);
 BlockRegistry.set("tips", QuickTipsViewModel);
 BlockRegistry.set("help", HelpViewModel);
 BlockRegistry.set("launcher", LauncherViewModel);
+BlockRegistry.set("commandlog", CommandLogViewModel);
 
 function makeViewModel(blockId: string, blockView: string, nodeModel: BlockNodeModel): ViewModel {
     const ctor = BlockRegistry.get(blockView);

@@ -56,6 +56,15 @@ const Widgets = memo(() => {
             },
         },
     };
+    const commandLogWidget: WidgetConfigType = {
+        icon: "list",
+        label: "cmdlog",
+        blockdef: {
+            meta: {
+                view: "commandlog",
+            },
+        },
+    };
     const showHelp = fullConfig?.settings?.["widget:showhelp"] ?? true;
     const widgets = sortByDisplayOrder(fullConfig?.widgets);
 

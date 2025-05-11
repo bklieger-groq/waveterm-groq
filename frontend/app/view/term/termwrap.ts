@@ -290,6 +290,16 @@ export class TermWrap {
         if (this.multiInputCallback) {
             this.multiInputCallback(data.key);
         }
+        // Emit terminalinput event when Enter is pressed
+        if (data.key === '\r' || data.key === '\n') {
+            const command = this.terminal.buffer.active.getLine(this.terminal.buffer.active.baseY + this.terminal.buffer.active.cursorY)?.translateToString().trim();
+            if (command) {
+                const event = new CustomEvent("terminalinput", {
+                    detail: command
+                });
+                window.dispatchEvent(event);
+            }
+        }
     }
 
     addFocusListener(focusFn: () => void) {
