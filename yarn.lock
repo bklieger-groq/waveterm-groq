@@ -21731,9 +21731,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"waveterm@workspace:.":
+"waveterm-groq@workspace:.":
   version: 0.0.0-use.local
-  resolution: "waveterm@workspace:."
+  resolution: "waveterm-groq@workspace:."
   dependencies:
     "@chromatic-com/storybook": "npm:^3.2.6"
     "@eslint/js": "npm:^9.20.0"

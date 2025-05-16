@@ -52,12 +52,35 @@ const ModalPage1 = () => {
             <div className="modal-content tos-content unselectable">
                 <div className="content-section">
                     <div className="icon-wrapper">
+                        <i className="icon fa-solid fa-code-fork"></i>
+                    </div>
+                    <div className="content-section-inner">
+                        <div className="content-section-title">Groq-Powered Fork</div>
+                        <div className="content-section-text">
+                            This is a fork of{" "}
+                            <a target="_blank" href="https://waveterm.dev" rel={"noopener"}>
+                                Wave Terminal
+                            </a>{" "}
+                            powered by{" "}
+                            <a target="_blank" href="https://github.com/bklieger-groq/waveterm-groq" rel={"noopener"}>
+                                Groq
+                            </a>
+                            . Check out the original project on{" "}
+                            <a target="_blank" href="https://github.com/wavetermdev/waveterm" rel={"noopener"}>
+                                GitHub
+                            </a>
+                            .
+                        </div>
+                    </div>
+                </div>
+                <div className="content-section">
+                    <div className="icon-wrapper">
                         <a target="_blank" href="https://github.com/wavetermdev/waveterm" rel={"noopener"}>
                             <i className="icon fa-brands fa-github"></i>
                         </a>
                     </div>
                     <div className="content-section-inner">
-                        <div className="content-section-title">Support us on GitHub</div>
+                        <div className="content-section-title">Support the original project on GitHub</div>
                         <div className="content-section-text">
                             We're <i>open source</i> and committed to providing a free terminal for individual users.
                             Please show your support by giving us a star on{" "}
@@ -69,30 +92,12 @@ const ModalPage1 = () => {
                 </div>
                 <div className="content-section">
                     <div className="icon-wrapper">
-                        <a target="_blank" href="https://discord.gg/XfvZ334gwU" rel={"noopener"}>
-                            <i className="icon fa-solid fa-people-group"></i>
-                        </a>
-                    </div>
-                    <div className="content-section-inner">
-                        <div className="content-section-title">Join our Community</div>
-                        <div className="content-section-text">
-                            Get help, submit feature requests, report bugs, or just chat with fellow terminal
-                            enthusiasts.
-                            <br />
-                            <a target="_blank" href="https://discord.gg/XfvZ334gwU" rel={"noopener"}>
-                                Join the Wave&nbsp;Discord&nbsp;Channel
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div className="content-section">
-                    <div className="icon-wrapper">
                         <i className="icon fa-solid fa-chart-line"></i>
                     </div>
                     <div className="content-section-inner">
                         <div className="content-section-title">Telemetry</div>
                         <div className="content-section-text">
-                            We collect minimal anonymous{" "}
+                            Waveterm collects minimal anonymous{" "}
                             <a target="_blank" href="https://docs.waveterm.dev/telemetry" rel={"noopener"}>
                                 telemetry data
                             </a>{" "}

@@ -85,6 +85,28 @@ const QuickTips = () => {
     return (
         <div className="tips-wrapper">
             <div className="tips-section">
+                <div className="tip-section-header">About This Fork</div>
+                <div className="tip">
+                    <div className="icon-wrap">
+                        <i className="fa-solid fa-code-fork" />
+                    </div>
+                    <div>
+                        This is a fork of{" "}
+                        <a target="_blank" href="https://waveterm.dev" rel={"noopener"}>
+                            Wave Terminal
+                        </a>{" "}
+                        powered by{" "}
+                        <a target="_blank" href="https://github.com/bklieger-groq/waveterm-groq" rel={"noopener"}>
+                            Groq
+                        </a>
+                        . Check out the original project on{" "}
+                        <a target="_blank" href="https://github.com/wavetermdev/waveterm" rel={"noopener"}>
+                            GitHub
+                        </a>
+                        .
+                    </div>
+                </div>
+
                 <div className="tip-section-header">Header Icons</div>
                 <div className="tip">
                     <div className="icon-wrap">
@@ -163,17 +185,6 @@ const QuickTips = () => {
                         <i className="fa-solid fa-sharp fa-cog fa-fw" />
                     </div>
                     Click the gear in the terminal to set your terminal theme and font size
-                </div>
-                <div className="tip-section-header">Need More Help?</div>
-                <div className="tip">
-                    <div className="icon-wrap">
-                        <i className="fa-brands fa-discord fa-fw" />
-                    </div>
-                    <div>
-                        <a target="_blank" href="https://discord.gg/XfvZ334gwU" rel="noopener">
-                            Join Our Discord
-                        </a>
-                    </div>
                 </div>
                 <div className="tip">
                     <div className="icon-wrap">
